@@ -5,9 +5,9 @@ WebVR. Basado en [Glitch](https://glitch.com).
 
 Puede ser auto dirigido o puede ser usado como parte de un evento práctico (p.e., tutorial
 o taller). Si estás en un evento, puedes presentar [A-Frame
-Presentation Kit](https://github.com/aframevr/aframe-presentation-kit) como una primera introducción .
+Presentation Kit](https://mozillaperu.github.io/aframe-presentation-kit/) como una primera introducción .
 
-[IR A SCHOOL](https://aframe.io/aframe-school/)
+[IR A SCHOOL](https://mozillaperu.github.io/aframe-school/)
 
 ![](https://cloud.githubusercontent.com/assets/674727/24431825/1a2c83de-13d3-11e7-9739-dd5004891684.png)
 
