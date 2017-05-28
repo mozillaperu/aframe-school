@@ -178,24 +178,24 @@ tenga acceso a tu servidor local
 
 ------
 
-## Try Out A-Frame Examples
+## Probar los Ejemplos de A-Frame
 
-> Play with examples on your desktop or smartphone from the [A-Frame
-> Homepage](https://aframe.io), [A-Frame Blog](https://aframe.io/blog/), or
-> [awesome-aframe](https://github.com/aframevr/awesome-aframe). See
-> [webvr.rocks](https://webvr.rocks) for information on setting up WebVR with a
-> headset if you have one.
+> Juega con los ejemplos en tu escritorio o smartphone desde la [página de
+> A-Frame](https://aframe.io), [el Blog de A-Frame](https://aframe.io/blog/), o
+> [awesome-aframe](https://github.com/aframevr/awesome-aframe). Mira
+> [webvr.rocks](https://webvr.rocks) para información o configurar WebVR con un
+> visor si tienes uno.
 
 <img data-src="media/img/examples.gif">
 
 ------
 
-## Start with *Hello, WebVR*
+## Empezar con *Hola, WebVR*
 
-> A-Frame provides easy-to-use HTML elements for starters called
-[primitives](https://aframe.io/docs/0.5.0/primitives/). In the sections below,
-we'll modify basic meshes through HTML attributes (e.g., change colors,
-positions, rotations, scale) and get a feel for the workflow.
+> A-Frame provee elementos HTML fáciles de usar para principiantes llamados
+[primitives](https://aframe.io/docs/0.5.0/primitives/). En las siguientes secciones,
+modificaremos los cosas básicas a través de atributos HTML (p.ej., cambiar colores,
+posiciones, rotaciones, escala) y tener una idea del flujo de trabajo.
 
 <img data-src="media/img/hellowebvr2.jpg">
 
@@ -203,58 +203,59 @@ positions, rotations, scale) and get a feel for the workflow.
 
 ---
 
-## Start with *Hello, WebVR* &mdash; Position
+## Empezar con *Hola, WebVR* &mdash; Posición
 
-> Position defines where objects are in 3D space (X, Y, Z) in meters. Change
-> the `position` of the objects via the `position` HTML attribute values. [Read about
-> positions](https://aframe.io/docs/master/components/position.html).
+> La posición define en dónde están los objetos en el espacio 3D (X, Y, Z) en metros.
+> Cambia la `posición` de los objetos a traves los valores del atributo HTML `position`.
+> [Lee sobre posiciones](https://aframe.io/docs/master/components/position.html).
 
-<a href="https://glitch.com/~aframe-school-position" target="_blank">Remix Lesson on Glitch</a>  <!-- .element: class="cta-button glitch" -->
+<a href="https://glitch.com/~aframe-school-position" target="_blank">Remezclar la Lección en Glitch</a>  <!-- .element: class="cta-button glitch" -->
 
-1. Move the cylinder left by *decreasing* the `position`'s X value
-2. Move the box up by *increasing * the `position`'s Y value
-3. Move the sphere back by *decreasing* the `position`'s Z value
-4. **Extra Credit:** Add `<a-ring>` as a child of `<a-sphere>` and give it a position to see relative positions
+1. Mover el cilindro hacia la izquierda *reduciendo* el valor X de `position`
+2. Mueve la caja hacia arriba *aumentando* el valor Y de `position`
+3. Mueve la esfera hacia atrás *reduciendo* el valor Z de `position`
+4. **Crédito adicional:** Agregar `<a-ring>` dentro de `<a-sphere>` y dale una
+posición para ver las posiciones relativas
 
 <img class="stretch" data-src="media/img/positionresult.jpg">
 
-<a href="https://aframe-school-position.glitch.me/solution.html" target="_blank">View Result</a>  <!-- .element: class="cta-button" -->
+<a href="https://aframe-school-position.glitch.me/solution.html" target="_blank">Ver el Resultado</a>  <!-- .element: class="cta-button" -->
 
 ---
 
-## Start with *Hello, WebVR* &mdash; Rotation
+## Empezar con *Hola, WebVR* &mdash; Rotación
 
-> Rotation defines orientation of objects in 3D space (about the X, Y, Z axes)
-> in degrees. Use the right-hand rule to spatially visualize rotation. [Read about
-> rotations](https://aframe.io/docs/master/components/rotation.html).
+> La rotación define la orientación de los objetos en el espacio 3D (sobre lo ejes
+> X, Y, Z) een grados. Usa regla de la derecha para visualizar parcialmente
+> la rotación. [Lee sobre rotaciones](https://aframe.io/docs/master/components/rotation.html).
 
-<a href="https://glitch.com/~aframe-school-rotation" target="_blank">Remix Lesson on Glitch</a>  <!-- .element: class="cta-button glitch" -->
+<a href="https://glitch.com/~aframe-school-rotation" target="_blank">Remezclar la Lección en Glitch</a>  <!-- .element: class="cta-button glitch" -->
 
-1. Rotate the cylinder around the X axis so we see the bottom
-2. Rotate the box around the Y axis so the box is facing straight
-3. **Extra Credit:** Wrap the scene contents in `<a-entity>` (like a `<div>`)
-and give it a rotation to see relative rotations
+1. Gira el cilindro al rededor del eje X para ver el fondo
+2. Gira la caja al rededor del eje Y para que la caja esté mirando hacia arriba
+3. **Crédito adicional:** Envuelve el contenido de la escena con `<a-entity>`
+(como un `<div>`) y date una rotación para ver las rotaciones relativas
 
 <img class="stretch" data-src="media/img/rotationresult.jpg">
 
-<a href="https://aframe-school-rotation.glitch.me/solution.html" target="_blank">View Result</a>  <!-- .element: class="cta-button" -->
+<a href="https://aframe-school-rotation.glitch.me/solution.html" target="_blank">Ver el Resultado</a>  <!-- .element: class="cta-button" -->
 
 ---
 
-## Start with *Hello, WebVR* &mdash; Add Primitives
+## Empezar con *Hola, WebVR* &mdash; Agregar Primitivos
 
-> Add primitives the scene by adding HTML elements under `<a-scene>`.  [Read
-> about primitives](https://aframe.io/docs/0.5.0/primitives/).
+> Agregar primitivos a la escena agregando elementos HTML debajo de `<a-scene>`-
+> [Lee sobre primitivos](https://aframe.io/docs/0.5.0/primitives/).
 
-<a href="https://glitch.com/~aframe-school-primitives" target="_blank">Remix Lesson on Glitch</a>  <!-- .element: class="cta-button glitch" -->
+<a href="https://glitch.com/~aframe-school-primitives" target="_blank">Remezclar la Lección en Glitch</a>  <!-- .element: class="cta-button glitch" -->
 
-1. Add [`<a-torus-knot>`](https://aframe.io/docs/0.5.0/primitives/a-torus-knot.html) to the left
-2. Add [`<a-dodecahedron>`](https://aframe.io/docs/0.5.0/primitives/a-dodecahedron.html) to the right
-3. Add [`<a-text>`](https://aframe.io/docs/0.5.0/primitives/a-text.html) aligned in the center
+1. Agrega [`<a-torus-knot>`](https://aframe.io/docs/0.5.0/primitives/a-torus-knot.html) a la izquierda
+2. Agrega [`<a-dodecahedron>`](https://aframe.io/docs/0.5.0/primitives/a-dodecahedron.html) a la derecha
+3. Agrega [`<a-text>`](https://aframe.io/docs/0.5.0/primitives/a-text.html) alineado en el centro
 
 <img class="stretch" data-src="https://cloud.githubusercontent.com/assets/674727/24266010/9c57cbe4-0fc2-11e7-968f-168f3649d109.png">
 
-<a href="https://aframe-school-primitives.glitch.me/solution.html" target="_blank">View Result</a>  <!-- .element: class="cta-button" -->
+<a href="https://aframe-school-primitives.glitch.me/solution.html" target="_blank">Ver el Resultado</a>  <!-- .element: class="cta-button" -->
 
 ------
 
