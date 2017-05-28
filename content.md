@@ -1,9 +1,9 @@
-<!-- Title slide. -->
+<!-- Título de la presentación. -->
 <!-- .slide: data-background="media/img/aframe.jpg" -->
 
 <div class="talk-title">
-  <h1>A-Frame School</h1>
-  <h3>An interactive course for WebVR</h3>
+  <h1>Escuela A-Frame</h1>
+  <h3>Un curso interactivo sobre WebVR</h3>
   <p class="talk-info">
     <b><a href="https://aframe.io">aframe.io</a></b>
   </p>
@@ -11,137 +11,139 @@
 
 ------
 
-## Prologue
+## Prólogo
 
 <!-- .slide: data-background="media/img/aframe.jpg" -->
 
-> Using [Glitch](https://glitch.com), the School will give you step-by-step
-> exercises to help you jump into [WebVR](https://webvr.rocks)! The School has
-> sections going &larr; and &rarr; but also subsections going **&uarr; and
-> &darr;**:
+> Usando [Glitch](https://glitch.com), la Escuela te dará ejercicios
+> paso a paso ¡Para ayudarte a saltar en [WebVR](https://webvr.rocks)! La Escuela tiene
+> secciones yendo **&larr;** y **&rarr;** pero también subsecciones yendo **&uarr;** y
+> **&darr;**:
 
 <img class="stretch" data-src="media/img/navigation.jpg">
 
-**Navigate &darr;**
+**Navegar &darr;**
 
 ---
 
-### Resources During Your Journey
+### Recursos para tu Aventura
 
-1. [Skim through the docs and FAQ](https://aframe.io/docs/)
-2. [Get help from peeps on Slack](https://aframe.io/community/#slack)
-3. [Ask questions on Stack Overflow](http://stackoverflow.com/questions/ask/?tags=aframe)
-4. If you are in a live workshop event, please raise your hand if you have a question!
+1. [Revisa la documentación y preguntas frecuentes](https://aframe.io/docs/)
+2. [Obten ayuda de devotos en Slack](https://aframe.io/community/#slack)
+3. [Haz preguntas en Stack Overflow](http://stackoverflow.com/questions/ask/?tags=aframe)
+4. Si estás prescenciando un taller ¡Levanta tu mano si tienes una pregunta!
 
-**Navigate &rarr;**
+**Navegar &rarr;**
 
 
-<!-- Lessons start below. -->
+<!-- Las lecciones empiezan a continuación. -->
 
 
 ------
 
-## Glitch &mdash; Introduction
+## Glitch &mdash; Introducción
 
-> The School uses [Glitch](https://glitch.com) as your learning and development
-> environment for A-Frame.
+> La Escuela usa [Glitch](https://glitch.com) como entorno de aprendizaje
+> y desarrollo para A-Frame.
 
 <img class="stretch" data-src="media/img/glitch.jpg">
 
-- Glitch lets you code in the browser without having to set
-anything up
-- Glitch lets you **remix** projects to use existing A-Frame projects as a
-  starting point
-- Glitch instantly publishes and hosts your site with a URL (e.g.,
+- Glitch te permite programar en el navegador sin tener que configurar algo
+- Glitch te permite **remezclar** proyectos para usar proyectos existentes de
+  A-Frame existentes como punto de inicio
+- Glitch publica instantáneamente y almacena tu sitio con una URL (p.ej.,
   `https://aframe.glitch.me`)
-- Glitch updates your A-Frame site live on every code change
-- Glitch lets multiple people code on the same project
+- Glitch actualiza tu sitio en vivo en cada cambio de código
+- Glitch permite que varias personas programen al mismo tiempo
 
-*If you are interested in setting up a local development environment, skip ahead &darr;*
+*Si estás interesado(a) en configurar un entorno de desarrollo local, sigue adelante &darr;*
 
 ---
 
-## Glitch &mdash; Remixing an Existing Project
+## Glitch &mdash; Remezclando un Proyecto Existente
 
-> Glitch lets you remix or fork an existing project and use it as a base for your
-> new project. Before starting, we recommend linking Glitch to a [GitHub
-> account](https://github.com/). After you remix, Glitch will give you a random
-> project and URL name, which you can change.
+> Glitch te permite remezclar o hacer un fork de un proyecto existente y usarlo
+> como base para tu nuevo proyecto. Antes de empezar, te recomendamos enlazar
+> Glitch a una [cuenta de GitHub](https://github.com/). Después de remezclar,
+> Glitch te dará un proyecto aleatorio y una URL, que puedes cambiar.
 
 <img class="stretch" data-src="media/img/glitch2.jpg">
 
-<a href="https://glitch.com/~aframe/" target="_blank">Remix the A-Frame Starter Glitch</a>  <!-- .element: class="cta-button glitch" -->
+<a href="https://glitch.com/~aframe/" target="_blank">Remezclar A-Frame en Glitch para iniciar</a>  <!-- .element: class="cta-button glitch" -->
 
 ---
 
-## Glitch &mdash; Editing Code
+## Glitch &mdash; Editando el Código
 
-> Once you've [remixed the A-Frame Starter Glitch](https://glitch.com/~aframe/),
-> check out where you'll be editing your code. Poke around and see that you can
-> even edit the backend server code, upload assets, create new files, or invite
-> others to edit with you!
+> Una vez que has [remezclado A-Frame en Glitch](https://glitch.com/~aframe/),
+> revisa en dónde editarás tu código. Asómate y mira que incluso puedes
+> editar el código de servidor backend, subir assets, crear nuevos archivos, o
+> ¡Invitar a otros a editar contigo!
 
 <img class="stretch" data-src="media/img/glitch3.jpg">
 
 ---
 
-## Glitch &mdash; Viewing Your Project
+## Glitch &mdash; Visualización del proyecto
 
-> After you've poked around the editor, see the project live.
+> Después que te has asomado por el editor, mira el proyecto en vivo.
 
 <img class="stretch" data-src="media/img/glitch4.jpg">
 
 ---
 
-## Glitch &mdash; Exporting Your Project
+## Glitch &mdash; Exportando tu Proyecto
 
-> At any time, if you want to download your project or export to GitHub, see the
-> *Advanced Options* menu. Downloading will give you a `.tgz` file which you can
-> unzip. For A-Frame projects, you mostly care about what's in the `public/`
-> folder, and ignore all the server-side code.
+> En cualquier momento, si quieres descargar tu proyecto o exportarlo a Github
+> mira el menú *Advanced Options*. La descargar te dará un archivo `.tgz` que
+> puedes descomprimir. Para proyectos A-Frame, importa lo que está en la carpeta
+> `public/`, e ignora todo el código del lado del servidor.
 
 <img class="stretch" data-src="media/img/glitch5.jpg">
 
-If you download a project, you
-might be interested in setting up a web development environment in the next
-section **&darr;**. Else, head **&rarr;** to start with A-Frame!
+Si descargas un proyecto, puede
+Que estés interesado(a) en configurar un entorno de desarrollo web en la siguiente
+sección **&darr;**. Sino ¡Sigue adelante **&rarr;** para empezar con A-Frame!
 
 ---
 
-## [Optional] Set Up a Web Development Environment
+## [Opcional] Configurar un Entorno de Desarrollo Web
 
-> You can set up a full web development environment on your local machine, rather
-> than use Glitch's online web development environment.
+> Puedes configurar un entorno de desarrollo web completo en un máquina locl, en
+> lugar de usar el entorno de desarrollo en línea de Glitch.
 
 <img class="stretch" data-src="media/img/webdevenv1.jpg">
 
-1. **Get a text editor:** [Atom](https://atom.io) is a good one to start with
-2. **Set up a local server:** Download and run [Mongoose
-Server](https://www.cesanta.com/products/binary) or run `python -m
-SimpleHTTPServer` in a terminal
-3. **Create a file `index.html`** and copy A-Frame code from the Glitch samples
-4. **Run a local server** in the same directory as the HTML file
-5. **Open the local server's URL** in your browser (e.g., `http://localhost:8000`)
-6. **Make changes** to your HTML file and refresh your browser to see the changes
-7. Optional: check out [ngrok](https://ngrok.io) to let any device on any
-network have access to your local server
+1. **Obtener un editor de texto:** [Atom](https://atom.io) es uno bueno con
+el cual empezar
+2. **Configurar un servidor local:** Descarga y ejecuta [Mongoose
+Server](https://www.cesanta.com/products/binary) o ejecuta `python -m
+SimpleHTTPServer` en una terminal
+3. **Crea un archivo `index.html`** y copia el código de A-Frame de los ejemplos
+de Glitch
+4. **Ejecuta un servidor local** en el mismo directorio en el que está el archivo
+HTML
+5. **Abre la URL del servidor local** en tu navegador (p.ej., `http://localhost:8000`)
+6. **Haz cambios** a tu archivo HTML y refresca tu navegador para ver los cambios
+7. Opcional: Revisa [ngrok](https://ngrok.io) para permitir que cualquier dispositivo
+tenga acceso a tu servidor local
 
 ---
 
-## [Optional] Set Up a Web Development Environment &mdash; Get a Text Editor
+## [Opcional] Configurar un Entorno de Desarrollo Web &mdash; Obtener un Editor de Texto
 
-> [Atom](https://atom.io) is a good text editor to start if you don't have one.
-> Other popular options are [Notepad++](https://notepad-plus-plus.org/),
-> [Sublime](https://www.sublimetext.com/), [Brackets](http://brackets.io/), or
+> [Atom](https://atom.io) es un buen editor de texto para empezar si no tienes uno.
+> Otra opciones populares son [Notepad++](https://notepad-plus-plus.org/),
+> [Sublime](https://www.sublimetext.com/), [Brackets](http://brackets.io/), o
 > [vim](http://www.vim.org/download.php).
 
 <img class="stretch" data-src="media/img/webdevenv2.jpg">
 
 ---
 
-## [Optional] Set Up a Web Development Environment &mdash; Set Up a Local Server
+## [Opcional] Configurar un Entorno de Desarrollo Web &mdash; Configurar un Servidor Local
 
-> You'll need a local HTTP server to serve your files to the browser.
+> Necesitas un servidor HTTP local para servir tus archivos al navegador.
 
 <div class="captioned-image-row small">
   <div>
@@ -160,16 +162,17 @@ network have access to your local server
 
 ---
 
-## [Optional] Set Up a Web Development Environment &mdash; Use ngrok
+## [Opcional] Configurar un Entorno de Desarrollo Web &mdash; Usar ngrok
 
-> Optionally, you can use [ngrok](https://ngrok.com/) to help develop your
-> A-Frame project on a smartphone without having to do the local IP address
-> dance.
+> Opcionalmente, puedes usar [ngrok](https://ngrok.com/) para ayudar a desarrollar
+> tu proyecto A-Frame en un smartphone sin tener que tener una IP local.
 
-1. Download and unzip [ngrok](https://ngrok.com/download/) anywhere
-2. Run ngrok, providing it the port number of your local server (`./ngrok http 8080`)
-3. In the output, ngrok will give you a URL with a bunch of letters and numbers (e.g., `https://abcdef123456.ngrok.io`)
-4. Open that URL on another device on any network (such as a smartphone or another computer)
+1. Descarga y descomprime [ngrok](https://ngrok.com/download/) en cualquier lugar
+2. Ejecuta ngrok, proporcionandole el número de puerto de tu servidor local
+(`./ngrok http 8080`)
+3. En la terminal, ngrok te dará una URL con un montón de letras y números
+(p.ej., `https://abcdef123456.ngrok.io`)
+4. Abre esa URL en otro dispositivo en cualquier red (como un smartphone u otra computadora)
 
 <img class="stretch" data-src="media/img/webdevenv3.jpg">
 
