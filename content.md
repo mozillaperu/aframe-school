@@ -259,85 +259,85 @@ posición para ver las posiciones relativas
 
 ------
 
-## Add Textures &mdash; Uploading Assets
+## Agregar Texturas &mdash; Subiendo Recursos
 
-> We'll be adding image textures to meshes to more appearance than a flat color.
-> [Find your own images
-> online](https://aframe.io/docs/0.5.0/introduction/faq.html#where-can-i-find-assets),
-> and upload them through the assets section in Glitch or through the uploader on
-> [cdn.aframe.io](https://cdn.aframe.io). Wherever else you may upload, make sure
-> it's being served with
-> [CORS](https://developer.mozilla.org/docs/Web/HTTP/Access_control_CORS) and
-> over HTTPS.
+> Agregaremos texturas de imagen para combinar para más apariencia que un color plano.
+> [Encuentra tus propias imágnes
+> en línea](https://aframe.io/docs/0.5.0/introduction/faq.html#where-can-i-find-assets),
+> y súbelas a través de la sección de recursos en Glitch o a través del cargador en
+> [cdn.aframe.io](https://cdn.aframe.io). En donde sea que subas, asegúrate
+> que está siendo servidos con
+> [CORS](https://developer.mozilla.org/docs/Web/HTTP/Access_control_CORS) y
+> sobre HTTPS.
 
 <img class="stretch" data-src="media/img/glitchasset.jpg">
 
-In the Glitch below **&darr;**, some assets will already be provided in the
-assets section (pictured above).
+En el siguiente Glitch **&darr;**, algunos recursos ya estarán disponibles en la
+sección de recursos (imagen arriba).
 
 ---
 
-## Add Textures &mdash; Image Textures
+## Agregar Texturas &mdash; Texturas de imagen
 
-> Fill in the `src` HTML attributes with image URLs. [Read about applying an
-> image texture](https://aframe.io/docs/0.5.0/guides/building-a-basic-scene.html#applying-an-image-texture).
+> Llena los atributos HTML `src` con las URL de las imágenes. [Lee sobre cómo aplicar
+> una textura de imagen](https://aframe.io/docs/0.5.0/guides/building-a-basic-scene.html#applying-an-image-texture).
 
-<a href="https://glitch.com/~aframe-school-textures/" target="_blank">Remix Lesson on Glitch</a>  <!-- .element: class="cta-button glitch" -->
+<a href="https://glitch.com/~aframe-school-textures/" target="_blank">Remezclar la Lección en Glitch</a>  <!-- .element: class="cta-button glitch" -->
 
-1. Add an image texture to the ground, `<a-plane>`
-2. Add image textures to `<a-box>`es
-3. Add an image texture to `<a-sphere>`
-4. Add an image texture to `<a-cone>`
-5. Add an image texture to the background, `<a-sky>`. Find [360&deg; images from FLickr](https://www.flickr.com/groups/equirectangular/)
+1. Agregar una textura de imagen al suelo, `<a-plane>`
+2. Agrega texturas de imagen a las cajas, `<a-box>`
+3. Agrega una textura de imagen a la esfera, `<a-sphere>`
+4. Agrega una textura de imagen al cono, `<a-cone>`
+5. Agrega una textura de imagen al fondo, `<a-sky>`. Encuentra [Imágenes de 360&deg; desde FLickr](https://www.flickr.com/groups/equirectangular/)
 
 <img class="stretch" data-src="media/img/texture.jpg">
 
-<a href="https://aframe-school-textures.glitch.me/solution.html" target="_blank">View Result</a>  <!-- .element: class="cta-button" -->
+<a href="https://aframe-school-textures.glitch.me/solution.html" target="_blank">Ver el Resultado</a>  <!-- .element: class="cta-button" -->
 
 ------
 
-## Open the A-Frame Inspector
+## Abrir el Inspector de A-Frame
 
-> Hit **`<ctrl> + <alt> + i`** on **any** A-Frame scene to pop open a visual
-> editor, just like your browser's Dev Tools!  Try the Inspector on some of the
-> [homepage examples](https://aframe.io/examples/). [Read about the
+> Presiona **`<ctrl> + <alt> + i`** en **cualquier** escena A-Frame para abrir un editor
+> visual ¡Como las Herramientas de Desarrollador de tu navegador! Prueba el Inspector en algunos
+> de los [ejemplos de la página principal](https://aframe.io/examples/). [Lee sobre el
 > Inspector](https://aframe.io/docs/master/guides/using-the-aframe-inspector.html).
 
 <img class="stretch" data-src="media/img/inspector.gif">
 
 ---
 
-## Open the A-Frame Inspector &mdash; Change Component Values
+## Abrir el Inspector de A-Frame &mdash; Cambiar Valores de Componentes
 
-> Modify an entity by modifying its components on the right-hand panel. The
-> Inspector knows about all A-Frame components, including community components.
->  This example includes an external [text-geometry
-> component](https://www.npmjs.com/package/aframe-text-geometry-component), which
-> the Inspector can modify the values of live.
+> Modifica una entidad cambiando sus componentes en el panel de la derecha. El
+> Inspector sabe sobre todos los componentes de A-Frame, incluyendo los componentes de la comunidad.
+> Este ejemplo incluye un [componente
+> `text-geometry`](https://www.npmjs.com/package/aframe-text-geometry-component) externo, que
+> el Inspector puede modificar los valores en vivo.
 
-<a href="https://aframe-vaporwave.glitch.me" target="_blank">Open Example on Glitch</a>  <!-- .element: class="cta-button glitch" -->
+<a href="https://aframe-vaporwave.glitch.me" target="_blank">Abre el Ejemplo en Glitch</a>  <!-- .element: class="cta-button glitch" -->
 
-1. Select one of the entities with text in the example
-2. Change the [`text-geometry` component's](https://www.npmjs.com/package/aframe-text-geometry-component) `value` property
+1. Selecciona una de las entidades con texto en el ejemplo
+2. Cambia la propiedad `value` del [componente `text-geometry`](https://www.npmjs.com/package/aframe-text-geometry-component)
 
 <img class="stretch" data-src="media/img/inspectorchange.jpg">
 
 ---
 
-## Open the A-Frame Inspector &mdash; Attach Components from the Registry
+## Abrir el Inspector de A-Frame &mdash; Adjunta Componentes desde el Registro
 
-> Use [physics components](https://github.com/donmccurdy/aframe-physics-system)
-> from the [Registry](https://aframe.io/registry/) to add gravity and collisions.
-> The Registry is a curated collection of A-Frame components. And the Inspector
-> is hooked up to the Registry so we can add components from the Registry in the
-> entity panel.
+> Usa [componentes de física](https://github.com/donmccurdy/aframe-physics-system)
+> del [Registro](https://aframe.io/registry/) para agregar gravedad y colisiones.
+> El Registro es una colección limpia de componeentes de A-Frame. Y el Inspector
+> está enganchado al Registro, así que podemos agregar componentes desde el Registro en
+> el panel de entidad.
 
-<a href="https://aframe-vaporwave.glitch.me" target="_blank">Open Example on Glitch</a>  <!-- .element: class="cta-button glitch" -->
+<a href="https://aframe-vaporwave.glitch.me" target="_blank">Abre el Ejemplo en Glitch</a>  <!-- .element: class="cta-button glitch" -->
 
-1. Add the `static-body` component to ground grid
-2. Add the `dynamic-body` component to the torus knot (the purple pretzel in the back)
-3. Increase the Y-position of the torus knot to make it higher up
-4. Exit the Inspector
+1. Agrega el componente `static-body` a la grilla del piso
+2. Agrega el componente `dynamic-body` al nudo del toro (la rosca púrpura de atrás)
+3. Incrementa la posición Y del nudo del toro para hacerlo más alto
+4. Salir del Inspector
 
 <img class="stretch" data-src="media/img/inspectorregistry.gif">
 
