@@ -343,44 +343,44 @@ sección de recursos (imagen arriba).
 
 ------
 
-## Compose with Entity-Component &mdash; Break Primitives Down
+## Componer con Entidad-Componente &mdash; Descomponer Primitivos
 
-> Behind the easy-to-use primitive elements, A-Frame is based on an
-> entity-component architecture. Decompose the primitive elements in the
-> *Hello, WebVR* example to `<a-entity>`s with their fundamental components.
+> Detrás de los elementos fáciles de usar, A-Frame está basado en una
+> arquitectura entidad-componente. Descomponer los elementos primitivos en el
+> ejemplo *Hello, WebVR* a elementos `<a-entity>` con sus componentes fundamentales.
 
-<a href="https://glitch.com/~aframe-school-ecs" target="_blank">Remix Lesson on Glitch</a>  <!-- .element: class="cta-button glitch" -->
+<a href="https://glitch.com/~aframe-school-ecs" target="_blank">Remezclar la Lección en Glitch</a>  <!-- .element: class="cta-button glitch" -->
 
 [geometry]: https://aframe.io/docs/0.5.0/components/geometry.html
 [material]: https://aframe.io/docs/0.5.0/components/material.html
 
-1. Convert `<a-box>` to `<a-entity>` with [geometry component][geometry] and [material component][material]. Configure the geometry component to be `primitive: box`
-2. Convert `<a-sphere>` to `<a-entity>` with geometry component and material component. Configure the geometry component to be `primitive: sphere`
-3. Convert `<a-cylinder>` to `<a-entity>` with geometry component and material component. Configure the geometry component to be `primitive: cylinder`
-4. Convert `<a-plane>` to `<a-entity>` with geometry component and material component. Configure the geometry component to be `primitive: plane`
-5. Convert `<a-sky>` to `<a-entity>` with geometry component and material component. Configure the geometry component to be `primitive: sphere` with a large `radius: 3000`, and configure the material component to be `shader: flat` so we don't do expensive lighting calculations when we just need a flat color
+1. Convierte `<a-box>` a `<a-entity>` con el [componente geometry][geometry] y el [componente material][material]. Configura el componente geometry para que sea `primitive: box`
+2. Convierte `<a-sphere>` a `<a-entity>` con los componentes geometry y material. Configura el componeente geometry para que sea `primitive: sphere`
+3. Convierte `<a-cylinder>` a `<a-entity>` con los componentes geometry y material. Configura el componente geometry para que sea `primitive: cylinder`
+4. Convierte `<a-plane>` a `<a-entity>` con los componentes geometry y material. Configura el componente geometry para que sea `primitive: plane`
+5. Convierte `<a-sky>` a `<a-entity>` con los componentes geometry y material. Configura el componente geometry para que sea `primitive: sphere` con un gran `radius: 3000`, y configura el componente material para que sea `shader: flat` así no necesitamos hacer cálculos pesados para la luz cuando sólo necesitamos un color plano
 
-<a href="https://aframe-school-ecs.glitch.me/solution.html" target="_blank">View Result</a>  <!-- .element: class="cta-button" -->
+<a href="https://aframe-school-ecs.glitch.me/solution.html" target="_blank">Ver el Resultado</a>  <!-- .element: class="cta-button" -->
 
 ---
 
-## Compose with Entity-Component &mdash; Add a Light Source Sphere
+## Componer con Entidad-Componente &mdash; Agregar una Esfera de Fuente de Luz
 
-> Use the entity-component pattern to add a sphere that also acts as a point
-> light source. Mix together the geometry, material, and light components to
-> compose this type of object.
+> Usa el patrón entidad-componente para agregar una esfera que también actúe como un punto
+> de fuente de luz. Mezcla juntos los componente, geometry, material, y luz para
+> componer este tipo de objeto.
 
-1. Look for `<a-entity id="lightSphere">`
-2. Attach the [geometry component](https://aframe.io/docs/0.5.0/components/geometry.html) configured to use `primitive: sphere` to the entity
-3. Attach the [material component](https://aframe.io/docs/0.5.0/components/material.html) configured to use `color: #FFF` and `shader: flat` to the entity
-4. Attach the [light component](https://aframe.io/docs/0.5.0/components/light.html) configured to use `type: point` to the entity
-5. **Extra Credit:** Add the animation component from [the Registry](https://aframe.io/registry/) via a `<script>` tag. Attach the animation configured to use `property: position` and `dir: alternate` and `loop: true` and provide a position value for `to: <POSITION>`
+1. Busca `<a-entity id="lightSphere">`
+2. Adjunta el [componente geometry](https://aframe.io/docs/0.5.0/components/geometry.html) configurado para usar `primitive: sphere` a la entidad
+3. Adjunta el [componente material](https://aframe.io/docs/0.5.0/components/material.html) configurado para usar `color: #FFF` y `shader: flat` a la entidad
+4. Adjunta el [componente light](https://aframe.io/docs/0.5.0/components/light.html) configurado para usar `type: point` a la entidad
+5. **Crédito adicional:** Agrega el componente animation del [Registro](https://aframe.io/registry/) a través de la etiqueta `<script>`. Adjunta la animación configurada para usar `property: position` y `dir: alternate` y `loop: true` y proporcionar un valor de posición para `to: <POSITION>`
 
-<a href="https://glitch.com/~aframe-school-ecs-light-sphere" target="_blank">Remix Lesson on Glitch</a>  <!-- .element: class="cta-button glitch" -->
+<a href="https://glitch.com/~aframe-school-ecs-light-sphere" target="_blank">Remezclar la Lección en Glitch</a>  <!-- .element: class="cta-button glitch" -->
 
 <img class="stretch" data-src="https://cloud.githubusercontent.com/assets/674727/24060160/2c53a604-0b0f-11e7-9386-f83a3a9b4cfc.gif">>
 
-<a href="https://aframe-school-ecs-light-sphere.glitch.me/solution.html" target="_blank">View Result</a>  <!-- .element class="cta-button" -->
+<a href="https://aframe-school-ecs-light-sphere.glitch.me/solution.html" target="_blank">Ver el Resultado</a>  <!-- .element class="cta-button" -->
 
 ------
 
