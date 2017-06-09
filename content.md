@@ -384,28 +384,27 @@ sección de recursos (imagen arriba).
 
 ------
 
-## Extend with Entity-Component &mdash; From the Registry
+## Extender con Entidad-Componente &mdash; Desde el Registro
 
-> [The Registry](https://aframe.io/registry/) is a great place to grab cool
-> components that the community has added to A-Frame. Sort of like third-party
-> plugins. Find community components from the Registry, copy their JS links,
-> include them via a `<script>` tag, and use them straight from HTML.
+> [El Registro](https://aframe.io/registry/) es un gran lugar para consegur componentes
+> frescos que la comunidad ha agregado a A-Frame. Algo como complementos de
+> terceros. Encuentra componentes de la comunidad desde el Registro, copia sus enlaces JS,
+> inclúyelos con una etiqueta `<script>`, y úsalos directamente desde HTML.
 
-1. Include [Particle
-System](https://www.npmjs.com/package/aframe-particle-system-component). Attach
-`<a-entity>`s with `particle-system` components configured to `preset: default`
-and `preset: snow`. Open the Inspector to play with the values!
-2. Include [Animation](https://www.npmjs.com/package/aframe-animation-component). Attach
-animation to the sphere to throb its scale by configuring `animation` component
-with `property: scale`, `loop: true`, and `to: 1.1 1.1 1.1`
-3. Include [Outline Effect](https://www.npmjs.com/package/aframe-outline-effect). Drop in the
-`<script>` and attach the `outline` component to the scene
+1. Inclye el [Particle System](https://www.npmjs.com/package/aframe-particle-system-component). Adjunta
+los `<a-entity>` con componentes `particle-system` configurados a `preset: default`
+y `preset: snow` ¡Abre el Inspector para jugar con los valores!
+2. Incluye [Animation](https://www.npmjs.com/package/aframe-animation-component). Adjunta la
+animación a la esfera para hacer palpitar su escala configurando el componente `animation`
+con `property: scale`, `loop: true`, y `to: 1.1 1.1 1.1`
+3. Incluye [Outline Effect](https://www.npmjs.com/package/aframe-outline-effect). Ponlo en el
+`<script>` y adjunta el componente `outline` a la escena
 
-<a href="https://glitch.com/~aframe-school-registry" target="_blank">Remix Lesson on Glitch</a>  <!-- .element: class="cta-button glitch" -->
+<a href="https://glitch.com/~aframe-school-registry" target="_blank">Remezclar la Lección en Glitch</a>  <!-- .element: class="cta-button glitch" -->
 
 <img class="stretch" data-src="media/img/registryexample.gif">
 
-<a href="https://aframe-school-registry.glitch.me/solution.html" target="_blank">View Result</a>  <!-- .element class="cta-button" -->
+<a href="https://aframe-school-registry.glitch.me/solution.html" target="_blank">Ver el Resultado</a>  <!-- .element class="cta-button" -->
 
 ------
 
