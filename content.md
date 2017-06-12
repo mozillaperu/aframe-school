@@ -551,54 +551,54 @@ JavaScript dentro del componente `handle-events`, marcado por los comentarios de
 
 ------
 
-## Add 3D Models &mdash; glTF Model
+## Agregar Modelos 3D &mdash; Modelos glTF
 
-> 3D models are like the images of 3D and VR applications, although a bit
-> heavier. A 3D model is created beforehand in a 3D modeling program such as
-> [Blender](https://www.blender.org/) and consists of vertices, textures,
-> materials. We recommend using [glTF](https://github.com/KhronosGroup/glTF), a
-> relatively new 3D file format standard tailored for the Web. glTF is like the
-> JPG of 3D models.
+> Los modelos 3D son como imágenes de  aplicaciones 3D y VR, aunque un poco más
+> pesadas. Un modelo 3D es creado de antemano en un programa de modelado 3D como
+> [Blender](https://www.blender.org/) y consta de vértices, texturas,
+> materiales. Recomendamos usar [glTF](https://github.com/KhronosGroup/glTF), un
+> nuevo formato de archivo 3D estándar adaptado para la web. glTF es como el
+> JPG de los modelos 3D.
 
-<a href="https://glitch.com/~aframe-school-gltf-model" target="_blank">Remix Lesson on Glitch</a>  <!-- .element: class="cta-button glitch" -->
+<a href="https://glitch.com/~aframe-school-gltf-model" target="_blank">Remezclar la Lección en Glitch</a>  <!-- .element: class="cta-button glitch" -->
 
-1. Add the `https://cdn.aframe.io/test-models/models/virtualcity/VC.gltf` to
-the `<a-asset-item id="cityModel">`'s `src` attribute to preload the model
-2. Add `#cityModel` to the `<a-gltf-model>`'s `src` attribute to set and add the model
+1. Agrega el archivo `https://cdn.aframe.io/test-models/models/virtualcity/VC.gltf` al
+atributo `src` del elemento `<a-asset-item id="cityModel">` para precargar el modelo
+2. Agrega `#cityModel` al atributo `src` del elemento `<a-gltf-model>` para establecer y agregar el modelo
 
 <img class="stretch" data-src="https://cloud.githubusercontent.com/assets/674727/24275925/63067074-0ff0-11e7-9440-7c855b9ea0fd.png">
 
-<a href="https://aframe-school-gltf-model.glitch.me/solution.html" target="_blank">View Result</a>  <!-- .element: class="cta-button" -->
+<a href="https://aframe-school-gltf-model.glitch.me/solution.html" target="_blank">Ver el Resultado</a>  <!-- .element: class="cta-button" -->
 
 ---
 
-## Add 3D Models &mdash; glTF Model Animations
+## Agregar Modelos 3D &mdash; Animaciones en el Modelo glTF
 
-> Models can come with animations. The model provided above has many animations
-> of ships zooming across the city. In the previous Glitch, we've provided a simple
-> `play-all-model-animations` component that we can attach to our model to play
-> its animations. Continue working from your current Glitch.
+> Los modelos pueden venir con animaciones. El modelo proporcionado anteriormente tiene muchas animaciones
+> de vehículos cruzando la ciudad. En el anterior Glitch, tenemos proporcionado un simple
+> componente `play-all-model-animations` que podemos adjuntar a nuestro modelo para reproducir
+> sus animaciones. Coninúa trabajando desde tu Glitch actual.
 
-1. Include the `animation-mixer` component via a `<script>` in the
-`<head>` after the A-Frame script. This component is currently in the Registry,
-and may one day be included with A-Frame. `https://unpkg.com/aframe-extras.animation-mixer@3.4.0/dist/aframe-extras.animation-mixer.js`
-2. Attach the `animation-mixer` component to the `<a-gltf-model>` by
-setting it via an HTML attribute `animation-mixer`. By default, this will play all
-the animations of the model at once.
+1. Inclute el componente `animation-mixer` a través de un `<script>` dentro de
+`<head>` después del script de A-Frame. Este componente está actualmente en el Registro,
+y puede que algún día se incluya con A-Frame. `https://unpkg.com/aframe-extras.animation-mixer@3.4.0/dist/aframe-extras.animation-mixer.js`
+2. Adjunta el componente `animation-mixer` al `<a-gltf-model>` configurándolo
+a través de un atributo `animation-mixer`. Por defecto, esto reproducirá todas
+las animaciones del modelo a la vez.
 
 <img class="stretch" data-src="media/img/gltf.gif">
 
-<a href="https://aframe-school-gltf-model.glitch.me/solution2.html" target="_blank">View Result</a>  <!-- .element: class="cta-button" -->
+<a href="https://aframe-school-gltf-model.glitch.me/solution2.html" target="_blank">Ver el Resultado</a>  <!-- .element: class="cta-button" -->
 
 ---
 
-## Add 3D Models &mdash; Uploading 3D Models
+## Agregar Modelos 3D &mdash; Subiendo Modelos 3D
 
-> If you have a model of your own, it can be tricky to upload it to a CDN since
-> it consists of multiple files that reference each other. So far the easiest
-> way we've found is to dump them into a GitHub repo, publish the repo's master
-> branch to GitHub Pages, and use `rawgit.com` to serve them. Alternatively,
-> set up Amazon S3. More to come.
+> Si tienes un modelo propio, puede ser complicado subirlo a una CDN ya que
+> esto consiste en múltiples archivos que se referencian los unos a otros. Así que la manera
+> más fácil que hemos encontrado es ponerlos en un repositorio de GitHub, publica la rama
+> master del repositorio a GitHub Pages, y usa `rawgit.com` para servirlos. Alternativamente,
+> configura Amazon S3. Hay más por venir.
 
 ------
 
