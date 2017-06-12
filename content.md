@@ -503,52 +503,51 @@ y el cambio de color de la caja
 
 ------
 
-## Add Gaze-Based Cursor Interactions &mdash; Add Cursor Entity
+## Agregar Interacciones de Cursor Basadas en la Mirada &mdash; Agregar la Entidad Cursor
 
-> Use the gaze-based [`cursor`
-> component](https://aframe.io/docs/0.5.0/components/cursor.html) to provide
-> the ability to interact with entities (primarily for smartphones).  [Read
-> about building a 360&deg; image
-> gallery](https://aframe.io/docs/0.5.0/guides/building-with-components.html).
+> Usa el [componente `cursor`](https://aframe.io/docs/0.5.0/components/cursor.html)
+> basada en la mirada para proveer la posibilidad de interactuar con entidades
+> (principalmente para smartphones). [Lee sobre cómo desarrollar una galería de
+> imágenes 360&deg;](https://aframe.io/docs/0.5.0/guides/building-with-components.html).
 
-<a href="https://glitch.com/~aframe-school-cursor" target="_blank">Remix Lesson on Glitch</a>  <!-- .element: class="cta-button glitch" -->
+<a href="https://glitch.com/~aframe-school-cursor" target="_blank">Remezclar la Lección en Glitch</a>  <!-- .element: class="cta-button glitch" -->
 
-This lesson has all the event listeners hooked up already. We just need to add
-an entity with the `cursor` component which will provide those events based on
-user input.  Note these events are not provided by the browser, but through
-A-Frame.
+Esta lección tiene todos las escucha de eventos ya conectadas. Sólo necesitamos
+agregar una entidad con el componente `cursor`, el cual provee aquellos eventos basados
+en entradas de usuario. Ten en cuenta que estos eventos no son proporcionados por
+el navegador, sino a través de A-Frame.
 
-1. Add [`<a-camera>`](https://aframe.io/docs/0.5.0/components/camera.html) entity.
-   Previously A-Frame was providing a default camera
-2. Add [`<a-cursor>`](https://aframe.io/docs/0.5.0/components/cursor.html) entity
-   as a child underneath the camera entity
-3. Drag the camera around the click on the panels on desktop. On smartphones,
-   stare at the panels to trigger clicks (i.e., gaze-based)
+1. Agrega una entidad [`<a-camera>`](https://aframe.io/docs/0.5.0/components/camera.html).
+   Anteriormente A-Frame estuvo proporcionando una cámara predeterminada
+2. Agrga una entida [`<a-cursor>`](https://aframe.io/docs/0.5.0/components/cursor.html)
+   como una entidad hijo dentro de la entidad de la cámara
+3. Arrastra la cámara alrededor del click en los paneles en escritorio. En smartphones,
+   mira fíjamente los paneles para lanzar los clicks (por esos son, basado en la mirada)
 
 <img class="stretch" data-src="media/img/gaze.gif">
 
-<a href="https://aframe-school-cursor.glitch.me/solution.html" target="_blank">View Result</a>  <!-- .element: class="cta-button glitch" -->
+<a href="https://aframe-school-cursor.glitch.me/solution.html" target="_blank">Ver el Resultado</a>  <!-- .element: class="cta-button glitch" -->
 
 ---
 
-## Add Gaze-Based Cursor Interactions &mdash; Handle Events
+## Agregar Interacciones de Cursor Basadas en la Mirada &mdash; Manejar Eventos
 
-> Use the `click`, `mouseenter`, `mouseleave` events provided by the gaze-based
-> [`cursor` component](https://aframe.io/docs/0.5.0/components/cursor.html) to
-> change the properties of an object.
+> Usa los eventos `click`, `mouseenter`, `mouseleave` proporcionados por el
+> [componente `cursor`](https://aframe.io/docs/0.5.0/components/cursor.html) basado
+> en la mirada para cambiar las propiedades de un objeto.
 
-The Glitch code will have the project structure set up. We can add JavaScript
-code inside the `handle-events` component, marked by the code comments.
+El código en Glitch  tendrá la estructura del proyecto preparada. Podemos agregar código
+JavaScript dentro del componente `handle-events`, marcado por los comentarios de código.
 
-<a href="https://glitch.com/~aframe-school-cursor-handler" target="_blank">Remix Lesson on Glitch</a>  <!-- .element: class="cta-button glitch" -->
+<a href="https://glitch.com/~aframe-school-cursor-handler" target="_blank">Remezclar la Lección en Glitch</a>  <!-- .element: class="cta-button glitch" -->
 
-1. Attach our `controller-event-handler` to the cubes. We can attach to all of them at once through the mixin
-2. Add an event listener to change the box's color on `mouseenter` event
-3. Add an event listener to restore the box's color on `mouseleave` event
+1. Adjunta nuestro `controller-event-handler` a los cubos. Podemos adjuntarlo a todo de una vez a través del mixin
+2. Agrega una escucha de evento para cambiar el color de la caja con el evento `mouseenter`
+3. Agrega una escucha de evento para restaurar el color de caja en el evento `mouseleave`
 
 <img class="stretch" data-src="media/img/gazehandler.gif">
 
-<a href="https://aframe-school-cursor-handler.glitch.me/solution.html" target="_blank">View Result</a>  <!-- .element: class="cta-button glitch" -->
+<a href="https://aframe-school-cursor-handler.glitch.me/solution.html" target="_blank">Ver el Resultado</a>  <!-- .element: class="cta-button glitch" -->
 
 ------
 
