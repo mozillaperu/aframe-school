@@ -602,59 +602,59 @@ las animaciones del modelo a la vez.
 
 ------
 
-## Add Tracked Controls &mdash; Add Hand Controls
+## Agregar Seguimiento de Controles &mdash; Agregar Controles de Mano
 
-> Tracked hand controls provide immersion and interactivity with hand
-> controllers. In the following Glitch, we've pre-recorded hand control
-> movements and button presses with [A-Frame Motion
+> El seguimiento de controles de mano provee inmersión and interactividad con
+> controles de mano. En el siguiente Glitch, tenemos movimientos pre-grabados
+> de controles de mano y botones con [A-Frame Motion
 > Capture](https://github.com/dmarcos/aframe-motion-capture-components).
-> Now we just have to add the hands and handle the interaction events.
+> Ahora sólo tenemos que agregar las manos y manejar los eventos de interacción.
 
-<a href="https://glitch.com/~aframe-school-hand-controls" target="_blank">Remix Lesson on Glitch</a>  <!-- .element: class="cta-button glitch" -->
+<a href="https://glitch.com/~aframe-school-hand-controls" target="_blank">Remezclar la Lección en Glitch</a>  <!-- .element: class="cta-button glitch" -->
 
-1. Find `<a-entity id="left">` and add the [hand-controls component](https://aframe.io/docs/0.5.0/components/hand-controls.html)
-configured to the left hand (`hand-controls="left"`)
-2. Find `<a-entity id="right">` and add the hand-controls component
-configured to the right hand (`hand-controls="right"`)
-3. View the result and see the hands moving with pre-recorded motions
+1. Encuentra `<a-entity id="left">` y agrega el [componente hand-controls](https://aframe.io/docs/0.5.0/components/hand-controls.html)
+configurado para la mano izquierda (`hand-controls="left"`)
+2. Encuentra `<a-entity id="right">` y agrega el componente hand-controls
+confiurado para la mano derecha (`hand-controls="right"`)
+3. Mira el resultado y observa las manos moviéndose con movimientos pre-grabados
 
 <img class="stretch" data-src="media/img/trackedcontrols.gif">
 
-<a href="https://aframe-school-hand-controls.glitch.me/solution.html" target="_blank">View Result</a>  <!-- .element: class="cta-button" -->
+<a href="https://aframe-school-hand-controls.glitch.me/solution.html" target="_blank">Ver el Resultado</a>  <!-- .element: class="cta-button" -->
 
 ---
 
-## Add Tracked Controls &mdash; Add Interactivity
+## Agregar Seguimiento de Controles &mdash; Agregar Interactividad
 
-> There are many components to add interactivity to hand controls.
+> Hay muchos componentes para agregar interactividad con controles de mano.
 > [controller-cursor](https://github.com/bryik/aframe-controller-cursor-component),
 > [aabb-collider +
 > grab](https://github.com/aframevr/aframe/tree/master/examples/showcase/tracked-controls/components),
-> [super-hands](https://github.com/wmurphyrd/aframe-super-hands-component). For
-> this lesson, we'll use controller-cursor that acts as a pointing laser for
-> each hand. Continue from your previous Glitch.
+> [super-hands](https://github.com/wmurphyrd/aframe-super-hands-component). Para
+> esta lección, usaremos controller-cursor que actúa como un puntero laser para
+> cada mano. Continua desde tu anterior Glitch.
 
-1. Add `controller-cursor` component to both hands
-2. In the `controller-event-handler` component, change the color of the boxes
-when they are hovered over with the `mouseenter` event, and restore the color
-with the `mouseleave` event
+1. Agrega el componente `controller-cursor` a ambas manos
+2. En el componente `controller-event-handler`, cambia el color de las cajas
+cuando las manos pasen sobre cada una con el evento `mouseenter`, y restaura el color
+con el evento `mouseleave`
 
 <img class="stretch" data-src="media/img/trackedcontrols2.gif">
 
-<a href="https://aframe-school-hand-controls.glitch.me/solution2.html" target="_blank">View Result</a>  <!-- .element: class="cta-button" -->
+<a href="https://aframe-school-hand-controls.glitch.me/solution2.html" target="_blank">Ver el Resultado</a>  <!-- .element: class="cta-button" -->
 
 ------
 
 
-<!-- Lessons end here. -->
+<!-- Las lecciones terminan aquí. -->
 
 
-## Congratulations!
+## Felicitaciones!
 
-You've graduated from the A-Frame School and now have a virtual uncertified
-degree in WebVR.
+Están graduados de la Escuela A-Frame y ahora tienen una licenciatura
+no certificada en WebVR.
 
 <img class="stretch" data-src="https://cdn.hackaday.io/images/4174761433219325627.png">
 
-Head to [the documentation](https://aframe.io/docs/) for more guides to become
-a master.
+Revisa [la documentación](https://aframe.io/docs/) para más guías para convertirte
+en un maestro.
